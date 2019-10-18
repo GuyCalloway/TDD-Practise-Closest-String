@@ -4,5 +4,5 @@ def closest(arr)
   numbers.each_with_index { |x, i| z = x.to_i 
                             result.push([z, i, z])
                           }
-  return result[0..1]
+  return result.sort[0..1]  
 end
