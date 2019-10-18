@@ -28,4 +28,8 @@ describe "Closest String" do
     it "returns array of two arrays with weight, index and number" do
         expect(closest("2 4 2 1 2 3 1")).to eq([[2, 0, 2], [2, 2, 2]])
     end
+
+    it "returns array of two arrays with weight, index and number" do
+        expect(closest("2 40 101 10 2 30 1")).to eq([[2, 0, 2], [2, 2, 101]])
+    end
 end
